@@ -1,6 +1,7 @@
 /*
  * Author: Sting Chang
  * Date: 07/02/2016
+ *
  * Approach1:
  *      1. Use two indices, i = 0~len-1, j= i+1~len
  *      2. check whether (words[i]+words[j]) and (words[j]+words[i]) are palindrome
@@ -10,6 +11,8 @@
  *      2. For each word S, divide it into Sl and Sr, s = 0~len-1 and r = len-1~0, 
  *          a. if Sl isPalindrome and map has Sr.reverse, add(Sr.reverse.index, S.index)
  *          b. if Sr isPalindrome and map has Sl.reverse, add(S.index, Sl.reverse.index)
+ *
+ * Online solution: http://www.programcreek.com/2014/05/leetcode-palindrome-pairs-java/
  **/
 
 public class Solution {
