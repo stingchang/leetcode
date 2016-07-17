@@ -3,7 +3,7 @@ package com.leet.q211;
 
 public class Q213_HouseRobberII {
 	// calculate max value from 0 to send last, and max value from 1 to last
-	// return the alrger one
+	// return the larger one(i.e, rob only one of first and last)
 	
 	public int rob(int[] nums) {
 		if (nums == null || nums.length == 0)
